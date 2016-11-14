@@ -9,14 +9,14 @@ public class PhoenixCouncilCommands extends JavaPlugin {
 	public void onEnable() {
 		PluginDescriptionFile pdfFile = getDescription();
 		logger logger = getLogger();
-		logger.info(pfdFile.getName() + " has been enabled!");
+		logger.info(pdfFile.getName() + " has been enabled!");
 	}
 	
 	@Override
 	public void onDisable() {
 		PluginDescriptionFile pdfFile = getDescription();
 		logger logger = getLogger();
-		logger.info(pfdFile.getName() + " has been disabled!");
+		logger.info(pdfFile.getName() + " has been disabled!");
 	}
 	
 	@Override
