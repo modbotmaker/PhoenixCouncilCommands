@@ -21,6 +21,10 @@ public class PhoenixCouncilCommands extends JavaPlugin {
 	
 	@Override
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] a) {
+		if(!(sender instanceof Player)) {
+			sender.sendMessage("This command can be only run by a player!");
+			return false;
+		}
 		return false;
 		
 	}
