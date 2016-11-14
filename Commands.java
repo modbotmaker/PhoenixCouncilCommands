@@ -26,8 +26,6 @@ public class PhoenixCouncilCommands extends JavaPlugin {
 		} else if (cmd.getName().equalsIgnoreCase("mspc")) {
 			if ((sender instanceof Player)) {
 				sender.sendMessage("Here is the MuseScore version of Phoenix Council here: https://musescore.com/groups/phoenixcouncil");
-			} else {
-				Player player = (Player) sender;
 			}
 			return true;
 		}
