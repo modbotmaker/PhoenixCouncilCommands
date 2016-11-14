@@ -1,7 +1,11 @@
-package {$GroupName}.{$ArtifactName};
+package me.modbot;
 
+import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public final class {$ArtifactName} extends JavaPlugin {
-    
+public class PhoenixCouncilCommands extends JavaPlugin{
+
+	public void onEnable(){
+		PluginDescriptionFile pdfFile = getDescription();
+	}
 }
