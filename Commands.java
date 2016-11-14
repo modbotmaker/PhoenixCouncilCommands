@@ -31,4 +31,16 @@ public class PhoenixCouncilCommands extends JavaPlugin {
 		}
 		return false;
 	}
+	
+	@Override
+	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
+		if (cmd.getName().equalsIgnoreCase("basic")) {
+			return true;
+		} else if (cmd.getName().equalsIgnoreCase("steampc")) {
+			if ((sender instanceof Player)) {
+				sender.sendMessage("");
+			}
+			return true;
+		}
+		return false;
 }
