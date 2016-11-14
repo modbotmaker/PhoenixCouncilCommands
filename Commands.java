@@ -21,15 +21,13 @@ public class PhoenixCouncilCommands extends JavaPlugin {
 	
 	@Override
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
-		if (cmd.getName().equalsIgnoreCase("basic")) { // If the player typed /basic then do the following...
-			// do something...
+		if (cmd.getName().equalsIgnoreCase("basic")) {
 			return true;
-		} else if (cmd.getName().equalsIgnoreCase("basic2")) {
+		} else if (cmd.getName().equalsIgnoreCase("mspc")) {
 			if (!(sender instanceof Player)) {
-				sender.sendMessage("This command can only be run by a player.");
+				sender.sendMessage("Here is the MuseScore version of Phoenix Council here: https://musescore.com/groups/phoenixcouncil");
 			} else {
 				Player player = (Player) sender;
-				// do something
 			}
 			return true;
 		}
