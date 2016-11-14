@@ -38,7 +38,7 @@ public class PhoenixCouncilCommands extends JavaPlugin {
 			return true;
 		} else if (cmd.getName().equalsIgnoreCase("steampc")) {
 			if ((sender instanceof Player)) {
-				sender.sendMessage("");
+				sender.sendMessage("Here is the Steam version of Phoenix Council here: http://steamcommunity.com/groups/Phoenixcouncil2");
 			}
 			return true;
 		}
