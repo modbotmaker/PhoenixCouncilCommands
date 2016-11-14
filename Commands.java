@@ -21,6 +21,7 @@ public class PhoenixCouncilCommands extends JavaPlugin {
 	
 	@Override
 	public void onCommand(CommandSender arg0, Command arg1, String arg2, String arg3) {
+		return false;
 		
 	}
 }
