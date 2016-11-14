@@ -21,7 +21,7 @@ public class PhoenixCouncilCommands extends JavaPlugin {
 	
 	@Override
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
-		if (cmd.getName().equalsIgnoreCase("basic")) {
+		if (cmd.getName().equalsIgnoreCase("mspc")) {
 			return true;
 		} else if (cmd.getName().equalsIgnoreCase("mspc")) {
 			if ((sender instanceof Player)) {
@@ -34,7 +34,7 @@ public class PhoenixCouncilCommands extends JavaPlugin {
 	
 	@Override
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
-		if (cmd.getName().equalsIgnoreCase("basic")) {
+		if (cmd.getName().equalsIgnoreCase("steampc")) {
 			return true;
 		} else if (cmd.getName().equalsIgnoreCase("steampc")) {
 			if ((sender instanceof Player)) {
@@ -43,4 +43,5 @@ public class PhoenixCouncilCommands extends JavaPlugin {
 			return true;
 		}
 		return false;
+	}
 }
