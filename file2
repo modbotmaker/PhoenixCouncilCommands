@@ -1,0 +1,22 @@
+package me.modbot.commands;
+
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandExecutor;
+import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
+
+public class mspccommand implements CommandExecutor{
+	
+	@Override
+	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
+		if (cmd.getName().equalsIgnoreCase("mspc")) {
+			return true;
+		} else if (cmd.getName().equalsIgnoreCase("mspc")) {
+			if ((sender instanceof Player)) {
+				sender.sendMessage("Here is the MuseScore version of Phoenix Council here: https://musescore.com/groups/phoenixcouncil");
+			}
+			return true;
+		}
+		return false;
+	}
+}
