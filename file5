@@ -1,0 +1,22 @@
+package me.modbot.commands;
+
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandExecutor;
+import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
+
+public class steampccommand implements CommandExecutor{
+	
+	@Override
+	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
+		if (cmd.getName().equalsIgnoreCase("steampc")) {
+			return true;
+		} else if (cmd.getName().equalsIgnoreCase("steampc")) {
+			if ((sender instanceof Player)) {
+				sender.sendMessage("Here is the Steam version of Phoenix Council here: http://steamcommunity.com/groups/Phoenixcouncil2");
+			}
+			return true;
+		}
+		return false;
+	}
+}
