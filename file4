@@ -1,0 +1,22 @@
+package me.modbot.commands;
+
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandExecutor;
+import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
+
+public class mytcommand implements CommandExecutor{
+	
+	@Override
+	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
+		if (cmd.getName().equalsIgnoreCase("myt")) {
+			return true;
+		} else if (cmd.getName().equalsIgnoreCase("myt")) {
+			if ((sender instanceof Player)) {
+				sender.sendMessage("Here is Mika's youtube channel: https://www.youtube.com/channel/UCiCT2ebIPRnEVHEcwpAuzhA");
+			}
+			return true;
+		}
+		return false;
+	}
+}
